@@ -14,9 +14,9 @@ public class SalesManager {
         }
         return max;
     }
-    public int min() {
-        int min = 999;
-        for (int sale : sales) {
+    public long min() {
+        long min = 999;
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
@@ -24,9 +24,9 @@ public class SalesManager {
         return min;
     }
 
-    public int averagevalue(){
-        int srednee = 0;
-        for (int sale : sales) {
+    public long averagevalue(){
+        long srednee = 0;
+        for (long sale : sales) {
             srednee += sale;
         }
         srednee = (srednee - max() - min())/(sales.length - 2);

@@ -4,8 +4,8 @@ out/
 !**/src/test/**/out/
 
 # IntellijIdea files
-*.iml
 .idea
+*.iml
 out
 
 ### Eclipse ###
