@@ -14,6 +14,7 @@ public class SalesManager {
         }
         return max;
     }
+
     public long min() {
         long min = 999;
         for (long sale : sales) {
@@ -24,12 +25,12 @@ public class SalesManager {
         return min;
     }
 
-    public long averagevalue(){
-        long srednee = 0;
+    public long averagevalue() {
+        long mean = 0;
         for (long sale : sales) {
-            srednee += sale;
+            mean += sale;
         }
-        srednee = (srednee - max() - min())/(sales.length - 2);
-        return srednee;
+        mean = (mean - max() - min()) / (sales.length - 2);
+        return mean;
     }
 }
